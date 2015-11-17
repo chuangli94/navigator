@@ -29,8 +29,8 @@ for(var i=0; i<links.length; i++) {
 }
 
 // styling
-nav_panel.setAttribute("style", "width: 10%; position: fixed; left: 0; float: left; background-color: lightblue; margin-left: -9%;"); 
-bookmarks.setAttribute("style", "list-style-type: none; margin: 0; padding: 0;");
+nav_panel.setAttribute("style", "width: 150px; position: fixed; left: 0; float: left; background-color: lightblue; margin-left: -130px; transition: all 0.2s ease;"); 
+bookmarks.setAttribute("style", "list-style-type: none;");
 
 // transition
 nav_panel.onmouseover = function() {
@@ -38,7 +38,7 @@ nav_panel.onmouseover = function() {
 }
 
 nav_panel.onmouseout = function() {
-	nav_panel.style['margin-left'] = "-9%";
+	nav_panel.style['margin-left'] = "-130px";
 }
 
 document.body.insertBefore(nav_panel, document.body.firstChild);
